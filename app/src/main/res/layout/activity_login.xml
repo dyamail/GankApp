@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@mipmap/icon_login_bg">
+
+            <include layout="@layout/toolbar_title_white"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <EditText
+                android:id="@+id/edit_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_login_et_bg"
+                android:hint="请输入账号"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:minHeight="45dp"
+                android:paddingLeft="20dp"
+                android:textColor="#8B8878"
+                android:textColorHint="#D3D3D3"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/shape_login_et_bg"
+                android:hint="请输入密码"
+                android:inputType="numberPassword"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:minHeight="45dp"
+                android:paddingLeft="20dp"
+                android:textColor="#8B8878"
+                android:textColorHint="#D3D3D3"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/shape_login_btn_bg"
+                android:minHeight="45dp"
+                android:text="登录"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="忘记密码"
+                    android:textColor="#8B8878"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:id="@+id/tv_register_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="注册"
+                    android:textColor="#8B8878"
+                    android:textSize="17sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="----   or  --------"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/shape_login_btn_wechat_bg"
+                android:minHeight="45dp"
+                android:text="微信"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

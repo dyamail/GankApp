@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/first_group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_fuli"
+            android:checked="true"
+            android:icon="@drawable/gank_icon_girl"
+            android:title="福利"/>
+
+        <item
+            android:id="@+id/nav_history"
+            android:checked="true"
+            android:icon="@drawable/gank_icon_time"
+            android:title="时间浏览" />
+
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/gank_icon_category"
+            android:title="分类浏览" />
+
+        <item
+            android:id="@+id/nav_collect"
+            android:icon="@drawable/gank_icon_collect"
+            android:title="收藏" />
+
+        <item
+            android:id="@+id/nav_codes"
+            android:icon="@drawable/gank_icon_jcode"
+            android:title="泡在网上的日子" />
+
+        <item
+            android:id="@+id/nav_cocoa_china"
+            android:icon="@drawable/gank_icon_ios"
+            android:title="CocoaChina" />
+
+    </group>
+</menu>

@@ -1,0 +1,15 @@
+package com.dyamail.gankapp.ui.iView;
+
+import com.dyamail.gankapp.ui.base.BaseView;
+
+/**
+ * Created by dyamail on 2017/8/29.
+ */
+
+public interface LoginView extends BaseView {
+    void showProgressDialog();
+
+    void hideProgressDialog();
+
+    void LoginSucceed();
+}
